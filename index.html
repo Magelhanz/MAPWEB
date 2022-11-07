@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="viewport" content="width=device-width, initial-1.0">
     <meta name="author" content="Kelompok D8">
@@ -94,7 +94,24 @@
         centerMode: true,
         slidesToShow: 1,
         slidesToScroll: 3,
-        autoplay:true
+        autoplay:true,
+	autoplaySpeed:3000,
+        adaptiveHeight: true,
+        responsive: [{
+          breakpoint: 620,
+    settings: {
+        arrows: true,
+        variableWidth: true
+        }
+      },
+      {
+        breakpoint: 345,
+    settings: {
+        arrows: true,
+        variableWidth: true
+    }
+      }
+    ]
       });
     });
 </script>
